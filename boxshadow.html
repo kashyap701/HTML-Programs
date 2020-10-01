@@ -1,0 +1,59 @@
+#Box shadows in HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+        display:flex;
+        }
+        .card{
+            background-color: wheat;
+            padding:23px 32px;
+            margin:23px 32px;
+            /* border:2px solid red; */
+            
+            /* box shadow: offset-x offset-y color; */
+            /* box shadow: offset-x offset-y  blur-radius color; */
+            /* box shadow: offset-x offset-y blur-radius spread-radius color; */
+
+            /* box-shadow: 10px 13px yellow; */
+            /* box-shadow: -10px -13px yellow; */
+
+            /* box-shadow: 7px 5px 50px greenyellow; */
+            /* box-shadow: -7px -5px 50px greenyellow;    */
+
+            /* box-shadow: -7px -5px 50px 34px greenyellow;  */
+            /* box-shadow: -7px -5px 10px 34px rgb(278, 4,45,0.2);  */
+
+            /* box-shadow: inset 17px 5px yellow;  */
+
+            box-shadow: 3px 5px yellow, 4px 150px red; 
+        }        
+        .card h2{
+            /* text-shadow: 3px 4px red; */
+            /* text-shadow: 3px 4px 20px green; */
+            text-shadow: -3px -4px 20px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is Java course</h2>
+            <p>I had started Java development course and never going to end this until or unless it will completed.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint excepturi nam dolorem id saepe sit maiores praesentium aperiam architecto quae voluptatibus explicabo hic, alias neque, odit ad nostrum culpa? Aspernatur reiciendis officia qui voluptate quas? Provident quae at ex.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is Html course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint excepturi nam dolorem id saepe sit maiores praesentium aperiam architecto quae voluptatibus explicabo hic, alias neque, odit ad nostrum culpa? Aspernatur reiciendis officia qui voluptate quas? Provident quae at ex.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint excepturi nam dolorem id saepe sit maiores praesentium aperiam architecto quae voluptatibus explicabo hic, alias neque, odit ad nostrum culpa? Aspernatur reiciendis officia qui voluptate quas? Provident quae at ex.</p>
+        </div>
+    </div>
+</body>
+</html>
